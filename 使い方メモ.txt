@@ -1,0 +1,36 @@
+★githubにログイン
+ssh -T git@github.com
+
+①リポジトリ作成
+以下コマンドでローカルにリポジトリを作成うる
+git init
+
+②バージョン登録をする
+・状態を確認する
+git status
+・ステージングに登録する
+git add *
+・リポジトリにコミットする
+git commit -m "メッセージ"
+・コミット履歴を確認する
+git log
+・変更の内容を確認する
+git show
+
+③ローカルの変更の差分を確認する
+git diff
+
+④ステージングの変更の差分を確認する
+git diff --cached
+
+⑤リモートリポジトリを新規作成する
+git remote add origin git@github.com:yushin1402/html.git
+・originに紐づいているURLの確認
+git config remote.origin.utl
+・originに紐づいているURLの変更
+git remote set-url origin XXXXXXXX
+
+
+⑥リモートリポジトリにコミットを登録する
+git push -u origin master
+
