@@ -1,5 +1,7 @@
 ★githubにログイン
 ssh -T git@github.com
+★登録しないファイルを管理
+.gitと同じフォルダい.gitignoreファイルを作成してコミット対象外のファイルパスを記述
 
 ①リポジトリ作成
 以下コマンドでローカルにリポジトリを作成うる
@@ -33,4 +35,5 @@ git remote set-url origin XXXXXXXX
 
 ⑥リモートリポジトリにコミットを登録する
 git push -u origin master
+
 
