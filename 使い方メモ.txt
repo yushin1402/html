@@ -2,6 +2,24 @@
 ssh -T git@github.com
 ★登録しないファイルを管理
 .gitと同じフォルダい.gitignoreファイルを作成してコミット対象外のファイルパスを記述
+★ステージング登録前のバージョンに戻す
+git checkout ファイル名
+★コミットを取り消す
+・メッセージを元に取り消し(コミットログ上も取り消す)
+git reset --hard コミットした際のメッセージ(正規表現可能)
+・コミットIDを元に取り消し(コミットログに取り消しを追加)
+git revert コミットID
+★ブランチの切り替え
+git checkout -b feature/create-xx
+git branch
+★ブランチをプッシュ
+git push origin feature/create-xx
+★ブランチをマージ
+・GitHubの画面から対象ブランチにプルリクエストを作成
+・そのあとにMerge Pull requestを行う
+★リモートの変更を取り込む
+git pull
+
 
 ①リポジトリ作成
 以下コマンドでローカルにリポジトリを作成うる
